@@ -1,0 +1,6 @@
+{
+  "name": "introduction",
+  "id": "01",
+  "default-text": "defaultni text pro nastaveni statu. mistnost 1",
+  "player-choices": ["first choice", "second choice", "third choice"]
+}

@@ -10,7 +10,93 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  color: black;
+  background: lightblue;
+  text-decoration: underline;
+}
 
 * {
   box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1000px;
+  min-width: 530px;
+}
+
+/* GAMEBOOK BODY LAYOUT*/
+
+.borderline {
+  border-color: black;
+  /*border-top-left-radius: 255px 4px;
+  border-top-right-radius: 4px 225px;
+  border-bottom-right-radius: 225px 4px;
+  border-bottom-left-radius: 3px 205px;*/
+  border: solid 3px #41403e;
+}
+.gamebook-body {
+  margin-top: 5vh;
+  height: 75vh;
+}
+.sides-setup {
+  margin: 10px 10px;
+}
+
+/* LEFT SIDE LAYOUT */
+
+.character-stats {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats {
+  height: 12vh;
+  max-width: 33%;
+}
+
+.stat-field {
+  padding: 5px;
+  text-align: center;
+}
+
+.font-size {
+  font-size: 30px;
+}
+
+.inventory {
+  height: 30vh;
+  width: 20vh;
+}
+
+.inventory-body {
+  padding: 5px;
+}
+
+/* RIGHT SIDE LAYOUT*/
+
+.story-window {
+  height: 70%;
+  padding: 10px;
+}
+
+.combat-window {
+  height: 25%;
+}
+
+.aviable-choices {
+  height: 21.5vh;
+  padding: 10px 0px;
+  margin-top: 2px;
+}
+
+@media (min-width: 715px) {
+  .title {
+    font-size: 4rem;
+  }
 }
