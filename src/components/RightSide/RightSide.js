@@ -1,5 +1,5 @@
 import StoryWindow from "./StoryWindow";
-import AviableChoices from "./AviableChoices";
+import AviableChoices from "./AviableChoices/AviableChoices";
 
 function RightSide() {
   return (
