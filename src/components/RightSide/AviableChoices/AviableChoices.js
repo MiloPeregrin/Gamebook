@@ -11,8 +11,9 @@ const AviableChoices = (props) => {
     const textNode = textNodes.find(
       (textNode) => textNode.id === textNodeIndex
     );
-    const options = textNode.options;
-    return <OptionsItem options={options} />;
+    const textNodeOptions = textNode.options;
+
+    return <OptionsItem options={textNodeOptions} />;
   }
 
   return (

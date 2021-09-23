@@ -7,23 +7,28 @@ export const DataContextProvider = (props) => {
     {
       id: 1,
       text: [
-        "Vítej dobrodruhu",
+        "Tak ty bys chtěl bejt dobrodruh, jó?",
         <br />,
         <br />,
-        "Než se vydáš na cestu, je potřeba hodit kostkami a určit své výchozí hodnoty umění boje, staminy a štěstí.",
+        "Než se vydáš na cestu, hoď kostkami a urči své výchozí hodnoty umění boje, staminy a štěstí.",
       ],
       options: [
         {
+          optionId: 1,
           text: "Hodit kostkami pro výchozí hodnotu umění boje",
-          setItems: { blueGoo: true },
+          onClick: "state umeni boje zmenen na {DICE API CALL}",
           nextText: 2,
         },
         {
+          optionId: 2,
           text: "Hodit kostkami pro výchozí hodnotu staminy",
+          onClick: "state staminy zmenen na {DICE API CALL}",
           nextText: 2,
         },
         {
+          optionId: 3,
           text: "Hodit kostkami pro výchozí hodnotu štěstí",
+          onClick: "state stesti zmenen na {DICE API CALL}",
           nextText: 2,
         },
       ],

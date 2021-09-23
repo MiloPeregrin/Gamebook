@@ -4,9 +4,12 @@ export const CharContext = React.createContext(null);
 
 export const CharContextProvider = (props) => {
   const [characterStats, setCharacterStats] = useState({
-    skill: "-",
-    stamina: "-",
-    luck: "-",
+    defaultSkillValue: "",
+    defaultStaminaValue: "",
+    defaultLuckValue: "",
+    currentSkillValue: "-",
+    currentStaminaValue: "-",
+    currentLuckValue: "-",
   });
   const contextValue = {
     characterStats,
