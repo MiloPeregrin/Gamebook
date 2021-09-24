@@ -8,8 +8,8 @@ export const DataContextProvider = (props) => {
       id: 1,
       text: [
         "Tak ty bys chtěl bejt dobrodruh, jó?",
-        <br />,
-        <br />,
+        // <br />,
+        // <br />,
         "Než se vydáš na cestu, hoď kostkami a urči své výchozí hodnoty umění boje, staminy a štěstí.",
       ],
       options: [
