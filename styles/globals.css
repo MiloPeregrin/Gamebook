@@ -81,12 +81,28 @@ ul {
 /* RIGHT SIDE LAYOUT*/
 
 .story-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height: 70%;
   padding: 10px;
 }
 
 .combat-window {
-  height: 25%;
+  height: 40%;
+}
+
+.combat-player,
+.combat-enemy {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.combat-nameplate {
+  display: flex;
+  flex-direction: column;
 }
 
 .aviable-choices {

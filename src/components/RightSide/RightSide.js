@@ -1,4 +1,4 @@
-import StoryWindow from "./StoryWindow";
+import StoryWindow from "./StoryWindow/StoryWindow";
 import AviableChoices from "./AviableChoices/AviableChoices";
 
 function RightSide() {

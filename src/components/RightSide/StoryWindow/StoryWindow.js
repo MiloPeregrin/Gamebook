@@ -1,6 +1,7 @@
 import React, { Fragment, useContext } from "react";
-import { StateContext } from "../store/StateContext";
-import { DataContext } from "../store/DataContext";
+import { StateContext } from "../../store/StateContext";
+import { DataContext } from "../../store/DataContext";
+import CombatWindow from "./CombatWindow";
 
 const StoryWindow = (props) => {
   const { node, setNode } = useContext(StateContext);
@@ -19,7 +20,10 @@ const StoryWindow = (props) => {
     );
   }
   return (
-    <div className="row borderline story-window">{showTextNode(node)}</div>
+    <div className="row borderline story-window">
+      {showTextNode(node)}
+      <CombatWindow />
+    </div>
   );
 };
 
